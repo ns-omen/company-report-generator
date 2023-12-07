@@ -3,6 +3,9 @@ from api_handler import create_new_report, get_existing_report
 
 st.set_page_config(page_title = 'AI Company Reports')
 
+hide_streamlit_style = "<style> footer { visibility: hidden; } </style>"
+st.markdown(hide_streamlit_style, unsafe_allow_html = True) 
+
 st.subheader('Company Report Generator', divider = 'rainbow')
 st.write('Harness the power of generative AI to create insightful company reports')
 
